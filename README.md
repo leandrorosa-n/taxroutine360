@@ -82,7 +82,6 @@ A proposta é estudar como **conhecimento tributário pode ser convertido em ló
 
 ## ⚖️ Análise Inteligente de Contratos
 
-![Análise Inteligente de Contratos](docs/images/analise-contratos.png)
 
 ### IA aplicada à análise tributária e contratual
 
@@ -117,7 +116,6 @@ A proposta é acelerar a análise preliminar sem substituir a avaliação juríd
 
 # 💰 Venda Inteligente 360
 
-![Venda Inteligente 360](docs/images/venda-inteligente-360.png)
 
 ### Tributação antes de fechar a venda
 
@@ -159,7 +157,6 @@ Entre os indicadores apresentados estão:
 
 # 🧾 Simulador de Operação Fiscal 360
 
-![Simulador de Operação Fiscal 360](docs/images/operacao-fiscal-360.png)
 
 ### Transformando uma operação comercial em enquadramento fiscal
 
@@ -202,7 +199,6 @@ em uma sequência estruturada de parâmetros e decisões.
 
 # 🧮 Calculadora de ICMS, ICMS-ST e DIFAL
 
-![Calculadora ICMS-ST e DIFAL](docs/images/calculo-icms-st.png)
 
 ### Cálculo + legislação + obrigação
 
@@ -236,7 +232,6 @@ A análise procura relacionar:
 
 # 🔎 Validador de NCM
 
-![Validador de NCM](docs/images/validador-ncm.png)
 
 ### A classificação fiscal como ponto de partida
 
