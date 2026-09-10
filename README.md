@@ -1,870 +1,666 @@
-# TaxRoutine 360
+<div align="center">
 
-> **Tax + Data + Technology + AI**
-> Transformando complexidade tributária em informação estruturada para análise e tomada de decisão.
+# ⚡ TaxRoutine 360
+
+### Tax Technology • Data • Automation • Artificial Intelligence
+
+**Transformando complexidade tributária em inteligência para decisão.**
+
+![Status](https://img.shields.io/badge/Status-BETA-blue)
+![Tax Technology](https://img.shields.io/badge/Tax-Technology-0A3D62)
+![AI](https://img.shields.io/badge/Artificial-Intelligence-00A67E)
+![Reforma Tributária](https://img.shields.io/badge/Reforma-Tributária-purple)
+
+</div>
 
 ---
 
-## Sobre o projeto
+# 🚀 O que é o TaxRoutine 360?
 
-O **TaxRoutine 360** é um projeto de **Tax Technology** criado para explorar como **conhecimento tributário, dados, automação, desenvolvimento de software e Inteligência Artificial** podem trabalhar juntos na rotina fiscal das empresas.
+O **TaxRoutine 360** é um projeto de **Tax Technology** criado para explorar como conhecimento tributário, dados, automação, software e Inteligência Artificial podem ser combinados para apoiar decisões fiscais e empresariais.
 
-A iniciativa nasceu da experiência prática com processos fiscais e tributários e da percepção de que grande parte da complexidade da área não está apenas no cálculo dos impostos, mas principalmente na necessidade de interpretar inúmeras variáveis antes de tomar uma decisão.
+O projeto parte de um problema comum:
+
+> **A complexidade tributária não está apenas em calcular impostos. Está em interpretar dezenas de variáveis antes de decidir como uma operação deve ser tratada.**
 
 Uma operação pode envolver simultaneamente:
 
-* natureza da operação;
-* produto ou serviço;
-* NCM;
-* CFOP;
-* CST;
-* CEST;
-* origem e destino;
-* regime tributário;
-* perfil do cliente;
-* legislação estadual;
-* retenções;
-* benefícios fiscais;
-* ICMS;
-* ICMS-ST;
-* DIFAL;
-* IPI;
-* PIS e COFINS;
-* IBS e CBS;
-* regras contratuais;
-* formação de preço;
-* margem comercial.
+```mermaid
+flowchart LR
+    A[Produto / Serviço] --> H[Análise Tributária]
+    B[NCM] --> H
+    C[Origem e Destino] --> H
+    D[Regime Tributário] --> H
+    E[Perfil do Cliente] --> H
+    F[Legislação] --> H
+    G[Natureza da Operação] --> H
 
-O TaxRoutine 360 busca transformar essas variáveis em **fluxos estruturados de análise**, permitindo que o profissional trabalhe de forma mais orientada a dados e com maior apoio tecnológico.
-
----
-
-# O problema
-
-As áreas Fiscal e Tributária trabalham em um ambiente caracterizado por:
-
-* alta complexidade legislativa;
-* alterações frequentes na legislação;
-* grande volume de informações;
-* múltiplos cenários operacionais;
-* diferentes tratamentos tributários por estado;
-* necessidade constante de interpretação;
-* processos manuais;
-* dependência de planilhas;
-* parametrizações em ERPs;
-* necessidade de interação com Comercial, Compras, Financeiro, Jurídico, Supply Chain e Tecnologia.
-
-Em muitos casos, uma decisão aparentemente simples exige combinar diversos elementos.
-
-Por exemplo:
-
-```text
-Produto
-   +
-NCM
-   +
-Origem / Destino
-   +
-Perfil do Cliente
-   +
-Regime Tributário
-   +
-Natureza da Operação
-   +
-Legislação
-   ↓
-Tratamento Tributário
+    H --> I[CFOP]
+    H --> J[CST]
+    H --> K[ICMS / IPI]
+    H --> L[PIS / COFINS]
+    H --> M[IBS / CBS]
+    H --> N[Obrigações]
 ```
 
-O desafio, portanto, não é apenas **encontrar a legislação**.
-
-O desafio é:
-
-> **transformar legislação, dados e regras tributárias em decisões operacionais.**
+O TaxRoutine 360 procura transformar essas variáveis em **processos estruturados de análise**.
 
 ---
 
-# Objetivo do TaxRoutine 360
+# 🎯 Visão do projeto
 
-O principal objetivo do projeto é criar uma plataforma capaz de **apoiar o profissional tributário durante diferentes etapas da análise fiscal**.
+<div align="center">
 
-A proposta é conectar:
+### TAX + DATA + TECHNOLOGY + AI
 
-```text
-                TAX
-                 │
-                 │
-     DATA ── TAXROUTINE 360 ── TECHNOLOGY
-                 │
-                 │
-                 AI
+</div>
+
+```mermaid
+flowchart TD
+    TAX[⚖️ TAX<br/>Legislação e regras]
+    DATA[📊 DATA<br/>Informações estruturadas]
+    TECH[💻 TECHNOLOGY<br/>Software e automação]
+    AI[🤖 AI<br/>Interpretação e análise]
+
+    TAX --> TR[TaxRoutine 360]
+    DATA --> TR
+    TECH --> TR
+    AI --> TR
+
+    TR --> DEC[🎯 Inteligência para decisão]
 ```
 
-O projeto busca demonstrar como conhecimento fiscal pode ser transformado em:
+O objetivo não é simplesmente criar calculadoras.
 
-* regras estruturadas;
-* simuladores;
-* validações;
-* cálculos;
-* análises automatizadas;
-* fluxos de decisão;
-* interpretação assistida por IA;
-* produtos digitais.
+A proposta é estudar como **conhecimento tributário pode ser convertido em lógica, software, automações e produtos digitais**.
 
 ---
 
-# Principais objetivos
+# 🖥️ Conheça alguns módulos
 
-## 1. Estruturar análises tributárias
+> As telas abaixo representam algumas das experiências desenvolvidas dentro do ecossistema TaxRoutine 360.
 
-Transformar perguntas abertas em fluxos orientados por parâmetros.
+## ⚖️ Análise Inteligente de Contratos
 
-Ao invés de simplesmente perguntar:
+![Análise Inteligente de Contratos](docs/images/analise-contratos.png)
 
-> "Qual é a tributação dessa operação?"
+### IA aplicada à análise tributária e contratual
 
-O sistema procura estruturar a análise:
-
-```text
-Qual é a operação?
-        ↓
-É entrada ou saída?
-        ↓
-Produto, serviço ou transporte?
-        ↓
-Qual é a origem?
-        ↓
-Qual é o destino?
-        ↓
-Qual é o NCM?
-        ↓
-Qual é o regime?
-        ↓
-Quem é o destinatário?
-        ↓
-Qual é o tratamento tributário?
-```
-
----
-
-## 2. Transformar conhecimento tributário em lógica de sistema
-
-Outro objetivo importante do projeto é estudar como regras fiscais podem ser convertidas em **lógica computacional**.
-
-Isso envolve transformar conceitos tributários em:
-
-* condições;
-* parâmetros;
-* validações;
-* tabelas;
-* relacionamentos;
-* regras de negócio;
-* motores de decisão;
-* consultas;
-* respostas estruturadas.
-
----
-
-## 3. Utilizar Inteligência Artificial como apoio
-
-A Inteligência Artificial é utilizada como uma camada adicional de apoio à análise.
-
-Entre as possibilidades exploradas pelo projeto estão:
-
-* interpretação de legislação;
-* análise de documentos;
-* identificação de informações relevantes;
-* explicação de cenários tributários;
-* apoio à análise contratual;
-* comparação de alternativas;
-* interpretação contextual;
-* geração de recomendações estruturadas.
-
-A premissa do projeto é:
-
-> **A IA não substitui o conhecimento tributário. Ela amplia a capacidade de análise do profissional.**
-
----
-
-## 4. Aproximar Fiscal e Negócio
-
-O impacto dos tributos não termina na área fiscal.
-
-Uma decisão tributária pode afetar:
-
-* preço;
-* margem;
-* fluxo de caixa;
-* contratos;
-* compras;
-* fornecedores;
-* clientes;
-* operação logística;
-* resultado financeiro.
-
-Por isso, o TaxRoutine 360 também busca aproximar:
-
-**Fiscal + Comercial + Pricing + Dados + Tecnologia**
-
----
-
-# Principais módulos
-
-## 🧾 Simulador de Operação Fiscal 360
-
-O módulo estrutura a análise de operações fiscais considerando diferentes parâmetros.
-
-Entre eles:
-
-* período da operação;
-* entrada ou saída;
-* produto;
-* serviço;
-* transporte;
-* categoria da operação;
-* origem;
-* destino;
-* NCM;
-* regime tributário;
-* perfil do destinatário;
-* consumidor final;
-* contribuinte do ICMS;
-* valor da operação.
-
-A partir dos parâmetros, a plataforma organiza o possível enquadramento tributário.
-
-Entre os elementos analisados estão:
-
-* CFOP;
-* CST;
-* ICMS;
-* IPI;
-* PIS;
-* COFINS;
-* IBS;
-* CBS;
-* cClassTrib;
-* regras complementares da operação.
-
-### Exemplo conceitual
-
-```text
-Operação
-   ↓
-Parâmetros
-   ↓
-Regras Tributárias
-   ↓
-Enquadramento
-   ↓
-CFOP + CST + Tributos + IBS/CBS
-   ↓
-Validação do Profissional
-```
-
----
-
-# 🧮 Calculadora de ICMS, ICMS-ST e DIFAL
-
-Módulo destinado à análise de operações envolvendo tributação estadual.
-
-Entre os parâmetros utilizados estão:
-
-* NCM;
-* CEST;
-* UF de origem;
-* UF de destino;
-* valor da mercadoria;
-* IPI;
-* frete;
-* seguro;
-* outras despesas;
-* MVA;
-* período da operação.
-
-O objetivo não é apenas apresentar uma conta matemática.
-
-A proposta é relacionar:
-
-```text
-NCM
- +
-CEST
- +
-Origem / Destino
- +
-MVA
- +
-Protocolo / Convênio
- ↓
-Tratamento do ICMS-ST
-```
-
-Entre os resultados apresentados podem estar:
-
-* ICMS próprio;
-* ICMS-ST;
-* MVA ajustada;
-* DIFAL;
-* FCP;
-* base de cálculo;
-* total da operação;
-* orientação relacionada ao recolhimento;
-* protocolos e convênios relacionados à operação.
-
----
-
-# 🔎 Validador de NCM
-
-A correta classificação fiscal é um dos elementos fundamentais da tributação de mercadorias.
-
-O módulo de NCM foi desenvolvido para apoiar:
-
-### Consulta individual
-
-Validação de um código específico.
-
-### Consulta em lote
-
-Validação de múltiplos códigos.
-
-### Busca inteligente
-
-Apoio ao usuário quando ainda não conhece exatamente o código aplicável ao produto.
-
-O módulo considera informações como:
-
-* código NCM;
-* descrição da mercadoria;
-* finalidade;
-* UF;
-* período;
-* marco legal da consulta.
-
-A classificação pode influenciar:
-
-* IPI;
-* ICMS;
-* ICMS-ST;
-* CEST;
-* benefícios fiscais;
-* parametrizações;
-* IBS;
-* CBS.
-
-A lógica pode ser representada como:
-
-```text
-Produto
-   ↓
-Descrição
-   ↓
-NCM
-   ↓
-TIPI
-   ↓
-ICMS / ICMS-ST / CEST
-   ↓
-IBS / CBS
-   ↓
-Tratamento Tributário
-```
-
----
-
-# 🤖 Análise Inteligente de Contratos
-
-O TaxRoutine 360 também explora a aplicação de Inteligência Artificial na análise tributária e contratual.
-
-O usuário pode fornecer o contrato para análise por meio de:
-
-* upload de arquivo;
-* PDF;
-* documentos Word;
-* texto;
-* imagens digitalizadas;
-* inserção direta do conteúdo.
-
-A análise busca identificar elementos que possam possuir impacto fiscal ou tributário.
-
-Entre os temas estão:
+O módulo permite enviar contratos e utilizar Inteligência Artificial como apoio para identificação de questões relacionadas a:
 
 * ISS;
 * INSS;
 * IRRF;
 * CSRF;
-* retenções na fonte;
-* características da prestação;
-* cláusulas relevantes;
-* possíveis riscos;
+* retenções;
+* cláusulas tributárias;
+* riscos;
 * oportunidades;
-* pontos que necessitam de análise adicional.
+* responsabilidades;
+* pontos que exigem validação adicional.
 
-### Fluxo conceitual
+### Processo
 
-```text
-Contrato
-   ↓
-Leitura e processamento
-   ↓
-Identificação de cláusulas
-   ↓
-Análise tributária
-   ↓
-Riscos e oportunidades
-   ↓
-Diagnóstico estruturado
-   ↓
-Validação profissional
+```mermaid
+flowchart LR
+    A[📄 Contrato] --> B[Upload / Texto]
+    B --> C[🤖 Processamento]
+    C --> D[Identificação de cláusulas]
+    D --> E[Análise tributária]
+    E --> F[Riscos e oportunidades]
+    F --> G[👨‍💼 Validação profissional]
 ```
 
-O módulo possui natureza **técnica, consultiva e de apoio**.
-
-A decisão final deve ser validada pelos profissionais responsáveis das áreas Fiscal, Tributária e Jurídica.
+A proposta é acelerar a análise preliminar sem substituir a avaliação jurídica ou tributária especializada.
 
 ---
 
 # 💰 Venda Inteligente 360
 
-O **Venda Inteligente 360** aproxima tributação e decisão comercial.
+![Venda Inteligente 360](docs/images/venda-inteligente-360.png)
 
-A ideia central é simples:
+### Tributação antes de fechar a venda
 
-> **Entender o impacto dos impostos antes de fechar a venda.**
+O **Venda Inteligente 360** aproxima o departamento fiscal das decisões comerciais.
 
-O módulo permite trabalhar com informações como:
+Em vez de analisar o impacto tributário somente depois da venda, o módulo permite considerar impostos durante a própria negociação.
 
-* produto;
-* NCM;
-* custo;
-* filial;
-* UF de origem;
-* UF de destino;
-* perfil do comprador;
-* contribuinte ou não contribuinte;
-* consumidor final;
-* revendedor;
-* preço.
+```mermaid
+flowchart LR
+    A[Produto] --> G[Simulação]
+    B[NCM] --> G
+    C[Custo] --> G
+    D[Cliente] --> G
+    E[Origem / Destino] --> G
+    F[Tributação] --> G
 
-Essas informações podem ser transformadas em indicadores de negócio, como:
+    G --> H[Preço]
+    H --> I[Margem]
+    I --> J[Lucro]
+    J --> K[Limite de desconto]
+    K --> L[🤝 Decisão comercial]
+```
 
-* preço final;
-* impostos estimados;
-* carga tributária efetiva;
-* margem de contribuição;
-* lucro estimado;
-* comissão;
-* rentabilidade;
-* limite para concessão de descontos.
+Entre os indicadores apresentados estão:
 
-### Conceito
+| Indicador               | Objetivo                          |
+| ----------------------- | --------------------------------- |
+| 💵 Preço final          | Valor proposto ao cliente         |
+| 🧾 Impostos estimados   | Impacto tributário da operação    |
+| 📊 Carga efetiva        | Peso dos tributos sobre a venda   |
+| 📈 Margem               | Margem de contribuição            |
+| 💰 Lucro                | Resultado estimado                |
+| 🤝 Comissão             | Impacto da comissão comercial     |
+| 🎯 Limite de negociação | Até onde o vendedor pode negociar |
+
+> **O imposto deixa de ser apenas uma consequência da venda e passa a fazer parte da decisão comercial.**
+
+---
+
+# 🧾 Simulador de Operação Fiscal 360
+
+![Simulador de Operação Fiscal 360](docs/images/operacao-fiscal-360.png)
+
+### Transformando uma operação comercial em enquadramento fiscal
+
+O módulo estrutura uma operação considerando diferentes variáveis.
+
+```mermaid
+flowchart TD
+    A[Operação] --> B{Entrada ou Saída?}
+
+    B --> C[Produto]
+    B --> D[Serviço]
+    B --> E[Transporte]
+
+    C --> F[Origem / Destino]
+    D --> F
+    E --> F
+
+    F --> G[NCM / Dados fiscais]
+    G --> H[Regime Tributário]
+    H --> I[Perfil do destinatário]
+
+    I --> J[Motor de análise fiscal]
+
+    J --> K[CFOP]
+    J --> L[CST]
+    J --> M[ICMS]
+    J --> N[IPI]
+    J --> O[PIS / COFINS]
+    J --> P[IBS / CBS]
+    J --> Q[cClassTrib]
+```
+
+A proposta é transformar uma pergunta ampla:
+
+> **"Como devo tributar esta operação?"**
+
+em uma sequência estruturada de parâmetros e decisões.
+
+---
+
+# 🧮 Calculadora de ICMS, ICMS-ST e DIFAL
+
+![Calculadora ICMS-ST e DIFAL](docs/images/calculo-icms-st.png)
+
+### Cálculo + legislação + obrigação
+
+O módulo analisa diferentes elementos da tributação estadual.
+
+```mermaid
+flowchart LR
+    A[NCM] --> F[Motor ICMS]
+    B[CEST] --> F
+    C[UF Origem] --> F
+    D[UF Destino] --> F
+    E[Valor da operação] --> F
+
+    F --> G[MVA]
+    G --> H[ICMS Próprio]
+    G --> I[ICMS-ST]
+    G --> J[DIFAL / FCP]
+
+    K[Protocolos e Convênios] --> F
+
+    I --> L[Responsabilidade pelo recolhimento]
+```
+
+O diferencial está em não mostrar somente o valor matemático.
+
+A análise procura relacionar:
+
+**NCM + CEST + Origem + Destino + MVA + Protocolos + Convênios + Obrigação**
+
+---
+
+# 🔎 Validador de NCM
+
+![Validador de NCM](docs/images/validador-ncm.png)
+
+### A classificação fiscal como ponto de partida
+
+A classificação correta da mercadoria influencia diferentes tratamentos tributários.
+
+```mermaid
+flowchart LR
+    A[📦 Produto] --> B[Descrição]
+    B --> C[🔎 NCM]
+    C --> D[TIPI]
+
+    D --> E[IPI]
+    C --> F[ICMS]
+    C --> G[ICMS-ST]
+    C --> H[CEST]
+    C --> I[IBS / CBS]
+
+    E --> J[Tratamento Tributário]
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+```
+
+O módulo contempla diferentes formas de consulta:
+
+* consulta individual;
+* validação de NCMs em lote;
+* busca inteligente;
+* período da consulta;
+* UF da operação;
+* descrição da mercadoria;
+* finalidade do produto.
+
+---
+
+# 🔗 Ecossistema integrado
+
+Os módulos foram pensados como partes de uma jornada maior.
+
+```mermaid
+flowchart LR
+
+    A[📄 Contrato] --> B[⚖️ Análise Inteligente]
+
+    B --> C[📦 Produto]
+
+    C --> D[🔎 Validação NCM]
+
+    D --> E[🧾 Operação Fiscal 360]
+
+    E --> F[🧮 ICMS / ST / DIFAL]
+
+    F --> G[💰 Venda Inteligente 360]
+
+    G --> H[📊 Margem e Rentabilidade]
+
+    H --> I[🎯 Decisão]
+```
+
+### Uma única operação pode exigir diferentes perspectivas
 
 ```text
+Contrato
+   ↓
 Produto
-   +
-Custo
-   +
-Cliente
-   +
-UF
-   +
-NCM
-   +
+   ↓
+Classificação Fiscal
+   ↓
+Enquadramento da Operação
+   ↓
 Tributação
    ↓
 Preço
    ↓
 Margem
    ↓
-Negociação
-   ↓
-Decisão Comercial
+Decisão
 ```
-
-O objetivo é fazer com que o tributo deixe de ser apenas uma consequência da venda e passe a ser uma **variável da decisão comercial**.
 
 ---
 
-# Reforma Tributária — IBS e CBS
+# 🧠 Como o TaxRoutine 360 pensa uma análise
 
-A Reforma Tributária brasileira representa uma transformação que ultrapassa a legislação.
+A ideia central do projeto é não começar pelo imposto.
 
-Ela impacta também:
+A análise começa pelo **contexto da operação**.
 
-* processos;
-* cadastros;
-* documentos fiscais;
-* ERPs;
-* integrações;
-* regras tributárias;
-* precificação;
-* dados;
-* compliance;
-* arquitetura de sistemas.
+```mermaid
+flowchart TD
 
-Por isso, o TaxRoutine 360 também incorpora conceitos relacionados à transição para:
+    A[1️⃣ Entender a operação]
 
-* IBS;
-* CBS;
-* novos códigos tributários;
-* CST;
-* cClassTrib;
-* novos tratamentos fiscais;
-* novos modelos operacionais.
+    A --> B[2️⃣ Coletar parâmetros]
 
-O projeto procura tratar a Reforma Tributária como uma combinação de:
+    B --> C[3️⃣ Identificar regras aplicáveis]
+
+    C --> D[4️⃣ Processar lógica tributária]
+
+    D --> E[5️⃣ Calcular impactos]
+
+    E --> F[6️⃣ Apresentar enquadramento]
+
+    F --> G[7️⃣ Mostrar riscos e premissas]
+
+    G --> H[8️⃣ Apoiar decisão profissional]
+```
+
+---
+
+# 🏗️ Do conhecimento tributário para o software
+
+Um dos objetivos centrais do projeto é transformar conhecimento fiscal em lógica computacional.
+
+```mermaid
+flowchart LR
+    A[📚 Legislação] --> B[Interpretação]
+    B --> C[Regra Tributária]
+    C --> D[Parâmetros]
+    D --> E[Regra de Negócio]
+    E --> F[💻 Código]
+    F --> G[🧪 Teste]
+    G --> H[🖥️ Interface]
+    H --> I[👤 Usuário]
+```
+
+Esse processo permite estudar como decisões normalmente realizadas manualmente podem ser transformadas em:
+
+* regras;
+* condições;
+* parâmetros;
+* validações;
+* tabelas;
+* relacionamentos;
+* algoritmos;
+* fluxos de decisão.
+
+---
+
+# 🤖 Inteligência Artificial aplicada ao TAX
+
+A Inteligência Artificial atua como uma camada complementar.
+
+```mermaid
+flowchart TD
+
+    A[Dados estruturados] --> IA[🤖 Inteligência Artificial]
+    B[Legislação] --> IA
+    C[Contratos] --> IA
+    D[Contexto da operação] --> IA
+
+    IA --> E[Interpretação]
+    IA --> F[Identificação de riscos]
+    IA --> G[Explicações]
+    IA --> H[Comparação de cenários]
+    IA --> I[Insights]
+
+    E --> J[👨‍💼 Profissional Tributário]
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+```
+
+### Princípio do projeto
+
+> **A Inteligência Artificial não substitui o conhecimento tributário. Ela amplia a capacidade de análise do profissional.**
+
+---
+
+# 🇧🇷 Reforma Tributária
+
+A Reforma Tributária representa muito mais do que mudança de alíquotas.
+
+Ela exige transformação de:
+
+```mermaid
+flowchart LR
+
+    A[⚖️ Legislação] --> E[Reforma Tributária]
+    B[⚙️ Processos] --> E
+    C[💻 Sistemas] --> E
+    D[📊 Dados] --> E
+
+    E --> F[IBS]
+    E --> G[CBS]
+    E --> H[CST]
+    E --> I[cClassTrib]
+    E --> J[Documentos Fiscais]
+    E --> K[Novos processos]
+```
+
+O TaxRoutine 360 também explora cenários associados à transição para o novo modelo tributário brasileiro.
+
+---
+
+# 🏢 TaxRoutine 360 e Tax Transformation
+
+O projeto procura aproximar áreas que tradicionalmente trabalham separadamente.
+
+```mermaid
+flowchart TD
+
+    TAX[⚖️ Fiscal / Tributário]
+    COM[🤝 Comercial]
+    FIN[💰 Financeiro]
+    JUR[📑 Jurídico]
+    SUP[🚚 Supply Chain]
+    TECH[💻 Tecnologia]
+    DATA[📊 Dados]
+
+    TAX --> TR[TaxRoutine 360]
+    COM --> TR
+    FIN --> TR
+    JUR --> TR
+    SUP --> TR
+    TECH --> TR
+    DATA --> TR
+
+    TR --> DEC[🎯 Decisão Empresarial]
+```
+
+---
+
+# 💡 Benefícios
+
+|      | Benefício              | Impacto                                               |
+| ---- | ---------------------- | ----------------------------------------------------- |
+| ⚡    | **Produtividade**      | Redução de atividades repetitivas e consultas manuais |
+| 🎯   | **Padronização**       | Estrutura comum para analisar operações               |
+| 🔎   | **Rastreabilidade**    | Maior visibilidade das premissas utilizadas           |
+| 🧠   | **Decisão**            | Informação estruturada para análise profissional      |
+| 📊   | **Dados**              | Organização das variáveis fiscais                     |
+| 🤖   | **IA**                 | Apoio à interpretação e análise                       |
+| 🤝   | **Integração**         | Aproxima Fiscal, Comercial, Jurídico e Tecnologia     |
+| 🇧🇷 | **Reforma Tributária** | Experimentação de novas regras IBS/CBS                |
+
+---
+
+# 📈 Resultados do projeto
+
+O projeto já permitiu transformar diferentes conceitos tributários em experiências digitais.
+
+### ✅ Estruturação de cenários fiscais
+
+Criação de fluxos orientados por parâmetros para análise de operações.
+
+### ✅ Desenvolvimento de simuladores
+
+Possibilidade de avaliar operações antes de sua execução.
+
+### ✅ Tributação estadual
+
+Modelagem de análises envolvendo ICMS, ICMS-ST, DIFAL, MVA, NCM e CEST.
+
+### ✅ Classificação fiscal
+
+Criação de ferramentas para validação e análise de NCM.
+
+### ✅ Inteligência Artificial
+
+Aplicação de IA em análise documental e interpretação tributária.
+
+### ✅ Pricing tributário
+
+Integração entre impostos, preço, margem e negociação comercial.
+
+### ✅ Reforma Tributária
+
+Incorporação progressiva de conceitos relacionados a IBS, CBS, CST e cClassTrib.
+
+### ✅ Tax Knowledge → Software
+
+Transformação de conhecimento técnico em regras computacionais.
+
+```mermaid
+flowchart LR
+
+    A[Conhecimento Fiscal]
+    --> B[Regras]
+
+    B --> C[Dados]
+
+    C --> D[Lógica]
+
+    D --> E[Software]
+
+    E --> F[Automação]
+
+    F --> G[🤖 Inteligência]
+
+    G --> H[🎯 Decisão]
+```
+
+---
+
+# 🔬 O projeto como laboratório de Tax Technology
+
+O TaxRoutine 360 também funciona como um laboratório para estudar a convergência entre:
 
 ```text
-TRIBUTAÇÃO
-    +
-PROCESSOS
-    +
-SISTEMAS
-    +
-DADOS
+                    TAX
+                     │
+                     ▼
+              TAX TRANSFORMATION
+               ▲     ▲      ▲
+               │     │      │
+             DATA    AI   SOFTWARE
 ```
 
----
+A pergunta central que orienta o desenvolvimento é:
 
-# Benefícios do projeto
-
-## ⚡ Maior produtividade
-
-A estruturação das informações pode reduzir o tempo gasto em consultas repetitivas e análises preliminares.
+> ### Como transformar conhecimento tributário em inteligência operacional?
 
 ---
 
-## 🎯 Padronização das análises
+# 🛠️ Desenvolvimento
 
-Fluxos estruturados ajudam a reduzir diferenças na forma como cenários semelhantes são avaliados.
+O GitHub é utilizado para registrar e organizar a evolução técnica do projeto.
 
----
-
-## 🔎 Melhor visibilidade dos parâmetros
-
-A interface torna explícitas as variáveis consideradas durante uma análise.
-
-Isso facilita:
-
-* revisão;
-* validação;
-* documentação;
-* discussão entre áreas.
-
----
-
-## 🧠 Apoio à tomada de decisão
-
-O objetivo não é fornecer apenas um número.
-
-A proposta é apresentar informações suficientes para que o profissional entenda:
-
-* o enquadramento;
-* os tributos;
-* as premissas;
-* os impactos;
-* os riscos;
-* as alternativas.
-
----
-
-## 📊 Integração entre Fiscal e Negócio
-
-Tributação pode influenciar diretamente o resultado econômico de uma operação.
-
-O projeto busca aumentar a conexão entre:
-
-* Fiscal;
-* Tributário;
-* Comercial;
-* Pricing;
-* Financeiro;
-* Compras;
-* Jurídico;
-* Tecnologia.
-
----
-
-## 🤖 Aplicação prática de Inteligência Artificial
-
-O projeto permite experimentar IA em situações tributárias reais, como:
-
-* análise documental;
-* interpretação;
-* classificação;
-* contextualização;
-* comparação;
-* geração de insights.
-
----
-
-## 🔄 Preparação para a transformação digital do TAX
-
-O projeto representa uma abordagem em que o profissional tributário passa a trabalhar cada vez mais com:
-
-* dados;
-* automação;
-* APIs;
-* IA;
-* regras estruturadas;
-* integração de sistemas.
-
----
-
-# Resultados do projeto
-
-O TaxRoutine 360 já permite demonstrar, em um único ambiente, diferentes aplicações de tecnologia voltadas à rotina tributária.
-
-Entre os principais resultados do desenvolvimento estão:
-
-### ✅ Estruturação digital de cenários fiscais
-
-Transformação de variáveis de negócio em fluxos estruturados de análise tributária.
-
-### ✅ Simulação de operações
-
-Criação de ambientes para testar cenários antes da execução efetiva da operação.
-
-### ✅ Integração entre classificação e tributação
-
-Relacionamento entre NCM, CEST, origem, destino, operação e tratamento fiscal.
-
-### ✅ Cálculos tributários estruturados
-
-Implementação de cálculos relacionados a ICMS, ICMS-ST, DIFAL e outras variáveis.
-
-### ✅ Aplicação de IA em contratos
-
-Uso de Inteligência Artificial para apoiar a identificação de cláusulas, retenções, riscos e oportunidades.
-
-### ✅ Tributação integrada à formação de preço
-
-Desenvolvimento de um módulo no qual impostos passam a fazer parte da análise de margem e negociação.
-
-### ✅ Incorporação da Reforma Tributária
-
-Desenvolvimento de cenários considerando IBS, CBS, CST e cClassTrib.
-
-### ✅ Transformação de conhecimento fiscal em software
-
-Um dos principais resultados do projeto é justamente demonstrar que conhecimento tributário pode ser traduzido em:
-
-```text
-Regras
-   ↓
-Dados
-   ↓
-Lógica
-   ↓
-Software
-   ↓
-Automação
-   ↓
-Inteligência
+```mermaid
+flowchart LR
+    A[💡 Ideia] --> B[Problema Fiscal]
+    B --> C[Modelagem]
+    C --> D[Desenvolvimento]
+    D --> E[🧪 Testes]
+    E --> F[Validação]
+    F --> G[Deploy]
+    G --> H[Feedback]
+    H --> I[Evolução]
+    I --> C
 ```
 
----
+O desenvolvimento envolve atividades como:
 
-# Jornada integrada
-
-Os módulos podem ser utilizados como partes de uma mesma jornada.
-
-Imagine uma empresa iniciando uma nova operação comercial:
-
-```text
-1. VALIDADOR DE NCM
-        ↓
-Validação da classificação fiscal
-
-2. SIMULADOR DE OPERAÇÃO FISCAL
-        ↓
-Determinação do enquadramento
-
-3. ICMS / ICMS-ST / DIFAL
-        ↓
-Análise da tributação estadual
-
-4. VENDA INTELIGENTE 360
-        ↓
-Preço, margem e negociação
-
-5. ANÁLISE DE CONTRATOS
-        ↓
-Riscos e obrigações contratuais
-
-6. DECISÃO
-```
-
-Essa visão integrada representa um dos conceitos centrais do TaxRoutine 360:
-
-> **analisar a operação como um todo e não apenas o imposto isoladamente.**
-
----
-
-# Tax Technology
-
-O projeto está baseado em quatro pilares:
-
-| Pilar          | Aplicação                                                   |
-| -------------- | ----------------------------------------------------------- |
-| **Tax**        | legislação, regras, enquadramento e conhecimento tributário |
-| **Data**       | estruturação e análise das informações                      |
-| **Technology** | software, automação, integrações e regras de negócio        |
-| **AI**         | interpretação, análise documental e apoio à decisão         |
-
----
-
-# GitHub e desenvolvimento
-
-Este repositório também representa a evolução técnica do TaxRoutine 360.
-
-O GitHub é utilizado como parte do processo de:
-
-* desenvolvimento;
 * versionamento;
 * documentação;
-* testes;
-* evolução das funcionalidades;
-* organização do código;
 * experimentação;
-* manutenção do projeto.
+* criação de componentes;
+* implementação de regras;
+* testes;
+* evolução das interfaces;
+* melhoria contínua.
 
-A proposta deste repositório não é apenas armazenar código.
+---
 
-Ele também documenta o processo de transformação de um problema tributário em uma solução tecnológica.
+# 🗺️ Roadmap
 
-```text
-Problema Fiscal
-      ↓
-Entendimento da Regra
-      ↓
-Definição dos Parâmetros
-      ↓
-Modelagem da Regra
-      ↓
-Desenvolvimento
-      ↓
-Teste
-      ↓
-Validação
-      ↓
-Evolução
+```mermaid
+timeline
+
+    title Evolução do TaxRoutine 360
+
+    BETA
+        : Simuladores fiscais
+        : Validador NCM
+        : ICMS-ST e DIFAL
+        : Venda Inteligente
+        : Análise de Contratos
+
+    EVOLUÇÃO
+        : Novos cenários fiscais
+        : Ampliação IBS e CBS
+        : Melhorias de UX
+        : Novas automações
+
+    TAX INTELLIGENCE
+        : Agentes especializados
+        : Analytics tributário
+        : Análise documental
+        : Dashboards
+
+    VISÃO FUTURA
+        : Integrações empresariais
+        : Automação de processos
+        : Inteligência tributária corporativa
 ```
 
 ---
 
-# Status do projeto
+# 🔭 Visão
 
-> 🚧 **Projeto em desenvolvimento contínuo / Beta**
+O profissional tributário continuará precisando dominar profundamente:
 
-O TaxRoutine 360 é um projeto em evolução.
+**legislação + processos + compliance**
 
-Funcionalidades, regras, interfaces, integrações e modelos de análise podem ser atualizados à medida que:
+Mas cada vez mais trabalhará também com:
 
-* novas funcionalidades são desenvolvidas;
-* novas legislações são publicadas;
-* regras existentes são revisadas;
-* novos casos de uso são incorporados;
-* novas tecnologias são testadas.
-
----
-
-# Roadmap
-
-Entre as linhas de evolução do projeto estão:
-
-* ampliação dos cenários fiscais;
-* evolução dos simuladores;
-* expansão da análise documental;
-* novos agentes de IA especializados;
-* automação de análises;
-* dashboards tributários;
-* analytics fiscal;
-* novos mecanismos de validação;
-* integração com dados estruturados;
-* integração futura com sistemas empresariais;
-* aprimoramento dos módulos relacionados à Reforma Tributária.
-
----
-
-# Visão do projeto
-
-O futuro da área tributária tende a exigir profissionais cada vez mais multidisciplinares.
-
-O conhecimento técnico continuará sendo fundamental, mas estará cada vez mais conectado a:
-
-**Dados**
-
-**Automação**
-
-**Inteligência Artificial**
-
-**Tecnologia**
-
-**Processos**
+**dados + software + automação + IA**
 
 O TaxRoutine 360 representa uma experimentação prática dessa transformação.
 
 ---
 
-# Conclusão
+<div align="center">
 
-O objetivo do TaxRoutine 360 não é apenas automatizar cálculos.
+# TaxRoutine 360
 
-É explorar uma questão mais ampla:
+### TAX + DATA + TECHNOLOGY + AI
 
-> **Como transformar conhecimento tributário em inteligência operacional?**
-
-A resposta passa pela combinação entre:
-
-```text
-Experiência Fiscal
-       +
-Dados
-       +
-Desenvolvimento
-       +
-Inteligência Artificial
-       =
-TAXROUTINE 360
-```
-
-### **Tax + Data + Technology + AI**
-
-**Transformando complexidade tributária em inteligência para decisão.**
+**Da legislação à decisão.**
 
 ---
 
-## Aviso importante
+⭐ Se o projeto chamou sua atenção, deixe uma **Star** no repositório.
+
+Sugestões e discussões sobre **Tax Technology, Reforma Tributária, automação fiscal, dados e Inteligência Artificial aplicada ao TAX** são bem-vindas.
+
+</div>
+
+---
+
+# ⚠️ Disclaimer
 
 O TaxRoutine 360 é uma ferramenta de apoio à análise.
 
-As informações, simulações, interpretações e resultados apresentados pela plataforma não substituem avaliação profissional, parecer jurídico, consultoria tributária ou validação da legislação aplicável ao caso concreto.
+As informações, simulações e interpretações apresentadas não substituem parecer jurídico, consultoria tributária ou validação profissional da legislação aplicável ao caso concreto.
 
-A legislação tributária está sujeita a alterações e interpretações específicas conforme operação, empresa, período e jurisdição.
-
----
-
-## Autor
-
-**Leandro Rosa**
-
-Profissional com experiência nas áreas Fiscal e Tributária, interessado na interseção entre:
-
-* Tax;
-* Reforma Tributária;
-* Tax Technology;
-* Dados;
-* Automação;
-* Inteligência Artificial;
-* desenvolvimento de soluções digitais.
-
-### Projeto
-
-**TaxRoutine 360 — Tax Technology & AI**
+A legislação tributária pode sofrer alterações e possuir particularidades relacionadas à empresa, operação, produto, período e jurisdição.
 
 ---
 
-⭐ Se este projeto for útil ou interessante para você, considere deixar uma **Star** no repositório.
+# 👨‍💻 Projeto
 
-Contribuições, sugestões e discussões sobre **Tax Technology, automação fiscal e Inteligência Artificial aplicada ao tributário** são bem-vindas.
+**TaxRoutine 360 — Tax Technology & Artificial Intelligence**
+
+Desenvolvido como projeto de estudo, inovação e aplicação prática da integração entre **Tributação, Tecnologia, Dados e Inteligência Artificial**.
